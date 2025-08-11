@@ -1,0 +1,34 @@
+{
+  "name": "vscode-extension-skeleton",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.83.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "rosmsg",
+        "aliases": [
+          "ROS Interface",
+          "rosmsg"
+        ],
+        "extensions": [
+          ".msg",
+          ".srv",
+          ".action"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "rosmsg",
+        "scopeName": "source.rosmsg",
+        "path": "../Syntaxes/ROS Interface.tmLanguage"
+      }
+    ]
+  }
+}
