@@ -45,7 +45,7 @@
         <key>name</key>
         <string>storage.type.rosmsg</string>
         <key>match</key>
-        <string>\b(?:bool|u?int(?:8|16|32|64)|float(?:32|64)|string|time|duration)\b</string>
+        <string>\b(?:bool|u?int(?:8|16|32|64)|float(?:32|64)|w?string|time|duration)\b</string>
       </dict>
       <key>comments</key>
       <dict>
@@ -138,14 +138,14 @@
       <key>field-string</key>
       <dict>
         <key>begin</key>
-        <string>(?=\bstring\b)</string>
+        <string>(?=\bw?string\b)</string>
         <key>end</key>
         <string>$|(?=#)</string>
         <key>patterns</key>
         <array>
           <dict>
             <key>match</key>
-            <string>\Gstring\b</string>
+            <string>\Gw?string\b</string>
             <key>captures</key>
             <dict>
               <key>0</key>
@@ -208,7 +208,7 @@
       <key>field-string-array</key>
       <dict>
         <key>begin</key>
-        <string>(?=\bstring[&lt;=\d]*\[)</string>
+        <string>(?=\bw?string[&lt;=\d]*\[)</string>
         <key>end</key>
         <string>$|(?=#)</string>
         <key>patterns</key>
@@ -217,7 +217,7 @@
             <key>name</key>
             <string>support.type.rosmsg</string>
             <key>match</key>
-            <string>\Gstring\b</string>
+            <string>\Gw?string\b</string>
             <key>captures</key>
             <dict>
               <key>0</key>

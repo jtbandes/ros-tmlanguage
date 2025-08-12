@@ -8,7 +8,7 @@ int32 foo True   # abc
 float64 foo = 142.
 float64 foo = 142.3
 string foo = abc
-string foo = ab # cdef
+wstring foo = ab # cdef
 string<=42 foo
 string< foo
 string<= foo
@@ -34,7 +34,7 @@ bool[] foo =[  True, false] # abc
 string foo
 string foo 
 string foo abc
-string foo abc,]
+wstring foo abc,]
 string foo a"b,\'d, b]
 string foo ,]
 string foo ,def]
