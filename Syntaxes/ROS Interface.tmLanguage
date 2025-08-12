@@ -307,13 +307,13 @@
             <key>name</key>
             <string>constant.numeric.float.rosmsg</string>
             <key>match</key>
-            <string>[-+]?\d*\.\d+</string>
+            <string>[-+]?(?:(?:\d+(?:_\d+)*)?\.\d+(?:_\d+)*|\d+(?:_\d+)*\.)(?:[eE][-+]?\d+(?:_\d+)*)?</string>
           </dict>
           <dict>
             <key>name</key>
             <string>constant.numeric.integer.rosmsg</string>
             <key>match</key>
-            <string>\d+</string>
+            <string>[-+]?\d+(?:_\d+)*</string>
           </dict>
           <dict>
             <key>name</key>

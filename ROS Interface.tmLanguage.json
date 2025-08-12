@@ -155,12 +155,12 @@
       "patterns": [
         {
           "name": "constant.numeric.float.rosmsg",
-          "match": "[-+]?\\d*\\.\\d+"
+          "match": "[-+]?(?:(?:\\d+(?:_\\d+)*)?\\.\\d+(?:_\\d+)*|\\d+(?:_\\d+)*\\.)(?:[eE][-+]?\\d+(?:_\\d+)*)?"
         },
 
         {
           "name": "constant.numeric.integer.rosmsg",
-          "match": "\\d+"
+          "match": "[-+]?\\d+(?:_\\d+)*"
         },
 
         {

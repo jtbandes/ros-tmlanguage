@@ -101,7 +101,7 @@ float32 multiline_optional
 
 uint32 foo = 55
 int32 bar=-11 # Comment # another comment
-float32 baz= 	 -32.25
+float32 baz= 	 -1_32.25e+1_5
 bool someBoolean = 0
 string fooStr = Foo    
 string EMPTY1 =  
