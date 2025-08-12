@@ -319,7 +319,7 @@
             <key>name</key>
             <string>constant.language.boolean.rosmsg</string>
             <key>match</key>
-            <string>[Tt]rue|[Ff]alse</string>
+            <string>(?i)\b(?:true|false)\b</string>
           </dict>
         </array>
       </dict>

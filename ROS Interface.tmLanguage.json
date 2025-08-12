@@ -165,7 +165,7 @@
 
         {
           "name": "constant.language.boolean.rosmsg",
-          "match": "[Tt]rue|[Ff]alse"
+          "match": "(?i)\\b(?:true|false)\\b"
         }
       ]
     },
