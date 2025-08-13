@@ -219,10 +219,10 @@
           "begin": "\"",
           "end": "\"|$",
           "beginCaptures": {
-            "1": { "name": "punctuation.definition.string.begin.rosmsg" }
+            "0": { "name": "punctuation.definition.string.begin.rosmsg" }
           },
           "endCaptures": {
-            "1": { "name": "punctuation.definition.string.end.rosmsg" }
+            "0": { "name": "punctuation.definition.string.end.rosmsg" }
           },
           "patterns": [{ "include": "#literal-string-escape" }]
         },
@@ -232,10 +232,10 @@
           "begin": "'",
           "end": "'|$",
           "beginCaptures": {
-            "1": { "name": "punctuation.definition.string.begin.rosmsg" }
+            "0": { "name": "punctuation.definition.string.begin.rosmsg" }
           },
           "endCaptures": {
-            "1": { "name": "punctuation.definition.string.end.rosmsg" }
+            "0": { "name": "punctuation.definition.string.end.rosmsg" }
           },
           "patterns": [{ "include": "#literal-string-escape" }]
         }
