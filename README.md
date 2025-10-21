@@ -29,7 +29,7 @@ int32 status
 
 This grammar is used for syntax highlighting by:
 
-- **GitHub [Linguist](https://github.com/github-linguist/linguist)** — for ROS msg/srv/action files and code blocks on GitHub.
+- **GitHub [Linguist](https://github.com/github-linguist/linguist)** — for ROS msg/srv/action files and Markdown [code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks#syntax-highlighting) (tagged with `` ```rosmsg ``) on GitHub.
 - The [**Robotics Development Extensions**](https://github.com/Ranch-Hand-Robotics/rde-ros-2) for Visual Studio Code.
 
 The language grammar is available in three formats:
