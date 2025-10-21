@@ -2,7 +2,35 @@
 
 **ROS Interface.tmLanguage** is a TextMate [language grammar](https://macromates.com/manual/en/language_grammars) for [ROS Interfaces](https://docs.ros.org/en/rolling/Concepts/Basic/About-Interfaces.html#interfaces) (**messages**, **services**, and **actions**). It defines regex-based parsing rules so that code renderers can [highlight](https://en.wikipedia.org/wiki/Syntax_highlighting) ROS message definitions using a semantic color scheme.
 
+<table>
+<tr>
+<td>
 <img width="277" height="187" src="https://github.com/user-attachments/assets/e53e4967-8f4d-47f7-831c-abb99583dd65" />
+</td>
+<td>
+
+```rosmsg
+# Request
+std_msgs/Header header
+string[] messages ["hello\, world!"]
+string<=255[] names
+float64[9] matrix [1,0,0,0,1,0,0,0,1]
+---
+# Response
+int32 STATUS_OK = 0
+int32 STATUS_ERROR = 1
+bool success False
+int32 status
+```
+
+</td>
+</tr>
+</table>
+
+This grammar is used for syntax highlighting by:
+
+- **GitHub [Linguist](https://github.com/github-linguist/linguist)** — for ROS msg/srv/action files and code blocks on GitHub.
+- The [**Robotics Development Extensions**](https://github.com/Ranch-Hand-Robotics/rde-ros-2) for Visual Studio Code.
 
 The language grammar is available in three formats:
 
@@ -16,7 +44,7 @@ The language grammar is available in three formats:
 
 ## Maintenance status
 
-This grammar is maintained by [**@jtbandes**](https://github.com/jtbandes) as a passion project. If you'd like to support past and future development, please consider [making a donation](https://github.com/sponsors/jtbandes). 💖
+This grammar [and others](https://github.com/jtbandes?tab=repositories&q=tmlanguage) are maintained by [**@jtbandes**](https://github.com/jtbandes) as a passion project. If you'd like to support past and future development, please consider [making a donation](https://github.com/sponsors/jtbandes). 💖
 
 ## License
 
